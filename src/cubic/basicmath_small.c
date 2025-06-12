@@ -10,6 +10,7 @@
 #include <string.h>
 #include "support.h"
 #include "snipmath.h"
+#define CPU_MHZ 1000
 
 /* This scale factor will be changed to equalise the runtime of the
    benchmarks. */
