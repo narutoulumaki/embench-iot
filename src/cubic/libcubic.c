@@ -22,6 +22,10 @@
 
 #include <math.h>
 #include "snipmath.h"
+int double_eq_beebs(double a, double b) {
+    // crude approximation: consider equal if difference < 0.00001
+    return (a - b < 0.00001) && (b - a < 0.00001);
+}
 
 void
 SolveCubic (double a, double b, double c, double d, int *solutions, double *x)
